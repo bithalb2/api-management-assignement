@@ -1,12 +1,8 @@
-provider "azurerm" {
-  features {}
-}
-
 terraform {
   backend "azurerm" {
-    resource_group_name = "tfstateRG"
-    storage_account_name = "tfstateSTG"
-    container_name = "tfstateCTR"
-    key = "terraform.tfstate"
+    resource_group_name  = "tfstaterg"
+    storage_account_name = "tfstatesurgestg"
+    container_name       = "tfstatesurgectr"
+    key                  = "terraform.tfstate"
   }
 }

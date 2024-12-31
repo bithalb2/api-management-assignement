@@ -1,0 +1,21 @@
+openapi: '3.0.2'
+info:
+  title: Sample Function API
+  version: '1.0'
+
+
+paths:
+  /echo:
+    get:
+      description: "Echo response"
+      operationId: Echo
+      responses:
+        '200':
+          description: OK
+  /echoreverse:
+    get:
+      description: "Echo response in reverse"
+      operationId: Echo Reverse
+      responses:
+        '200':
+          description: OK
